@@ -13,6 +13,13 @@ public class A7Q4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        // Create an array of 10 marks
+        double[] marks = new double[10];
+        
+        
+        // Sort array from highest to lowest mark
+            // BubbleSorting method
+        // Output the array
     }
 }

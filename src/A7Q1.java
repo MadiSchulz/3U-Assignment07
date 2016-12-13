@@ -19,16 +19,17 @@ public class A7Q1 {
         // Create scanner for user input
         Scanner input = new Scanner(System.in);
         // Ask user to input # of students
-        System.out.println("Enter number of students in class:");
+        System.out.println("Number of students in class:");
         // Store # of students
         int students = input.nextInt();
 
-        // Create integer array for the marks of each student
+        // Create array for the marks of each student
         double[] marks = new double[students];
         // Loop for user to fill the array
         for (int i = 0; i < marks.length; i++) {
             // Ask user to input marks for each student
             System.out.println("Mark of student " + (i + 1) + ":");
+            // Fill array
             marks[i] = input.nextDouble();
         }
         // Store # of total marks
@@ -39,7 +40,9 @@ public class A7Q1 {
             total = total + marks[i];
         }
         // Calculate the class average
-        double average = total / marks.length;
+        double average = Math.round((total / marks.length) * 100);
+        // Set to 2 decimal places
+        average = average / 100;
         // Ouput class average to user
         System.out.println("The class average is " + average + "%");
     }
