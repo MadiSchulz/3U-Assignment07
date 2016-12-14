@@ -24,17 +24,36 @@ public class A7Q4 {
         // Loop to populate array
         for (int i = 0; i < marks.length; i++) {
             // Ask user to input each mark
-            System.out.println("Mark " + (i + 1) + ":");
+            System.out.println("Enter mark " + (i + 1) + ":");
             // Fill spot
             marks[i] = input.nextDouble();
         }
         
-        // Sort array from highest to lowest mark
-            // BubbleSorting method
+        // Loop to obtain all spots in the array
+        for (int x = 0; x < marks.length; x++){
+            // Loop to sort the values
+            for(int y = 0; y < marks.length; y++){
+                // If spot x is greater than spot y
+                if (x > y){
+                    // Store value of x (otherwise erased)
+                    double storeValueX = marks[x];
+                    // Spot x is filled with y
+                    marks[x] = y;
+                    // Spot y is filled with the stored x value
+                    marks[y] = x;
+                }     
+            }
+        }
+            
         
         // 
         
  
-        // Output the array
+         // Ouput sorted array to user
+        System.out.println("The integers in ascending order are:");
+        // Loop to output the sorted values
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(marks[i]);
+        }
     }
 }
