@@ -22,7 +22,6 @@ public class A7Q2 {
         System.out.println("Number of people in group:");
         // Store # of people
         int people = input.nextInt();
-
         // Create array for the height of each person
         int[] height = new int[people];
         // Loop to populate array
@@ -41,7 +40,6 @@ public class A7Q2 {
         }
         // Calculate the average height
         int average = Math.round(sum / height.length);
-
         // Tell user what next numbers are
         System.out.println("Above average heights:");
         // Go through each height value in the array

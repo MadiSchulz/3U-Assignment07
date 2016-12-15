@@ -22,14 +22,13 @@ public class A7Q1 {
         System.out.println("Number of students in class:");
         // Store # of students
         int students = input.nextInt();
-
         // Create array for the marks of each student
         double[] marks = new double[students];
-        // Loop for user to fill the array
+        // Loop to populate array
         for (int i = 0; i < marks.length; i++) {
             // Ask user to input marks for each student
             System.out.println("Mark of student " + (i + 1) + ":");
-            // Fill array
+            // Fill spot
             marks[i] = input.nextDouble();
         }
         // Store # of total marks

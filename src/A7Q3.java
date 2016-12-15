@@ -16,7 +16,7 @@ public class A7Q3 {
      */
     public static void main(String[] args) {
 
-        // Create array to store two integers
+        // Create array of two integers
         int[] A = new int[2];
         // Create scanner
         Scanner input = new Scanner(System.in);
@@ -39,7 +39,7 @@ public class A7Q3 {
         }
         // If the second value is larger; already sorted
         // If both values are equal; already sorted
-        
+
         // Ouput sorted array to user
         System.out.println("The integers in ascending order are:");
         // Loop to output the sorted values
